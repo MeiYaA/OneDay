@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_rl_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="@drawable/bg"
     android:orientation="vertical"
     android:paddingBottom="10dp"
     tools:context=".MainActivity">
+
 
     <LinearLayout
         android:id="@+id/main_ll_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
-        <!--<include-->
-            <!--layout="@layout/part_common_title" />-->
+        <include
+            layout="@layout/part_common_title" />
 
         <TextView
             android:layout_width="match_parent"
@@ -31,8 +31,7 @@
             android:layout_height="wrap_content"
             android:background="#ffffff"
             android:orientation="vertical"
-            android:paddingRight="10dp"
-            >
+            android:paddingRight="10dp">
 
 
             <LinearLayout
@@ -40,8 +39,7 @@
                 android:layout_height="25dp"
                 android:background="#ffffff"
                 android:orientation="horizontal"
-                android:paddingLeft="10.8dp"
-                >
+                android:paddingLeft="10.8dp">
 
                 <ImageView
                     android:id="@+id/main_iv_circle"
@@ -49,8 +47,7 @@
                     android:layout_height="22dp"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="2dp"
-                    android:src="@drawable/circle_orange"
-                    />
+                    android:src="@drawable/circle_orange" />
 
                 <TextView
                     android:id="@+id/main_tv_date"
@@ -60,9 +57,8 @@
                     android:gravity="center_vertical"
                     android:paddingLeft="4dp"
                     android:paddingTop="5dp"
-                    android:text="2017年01月18日"
-                    android:textSize="14sp"
-                    />
+                    android:text="2019年05月26日"
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -70,8 +66,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="23dp"
@@ -98,8 +93,7 @@
                         android:paddingTop="5dp"
                         android:text="今天，你什么都没写下..."
                         android:textColor="@color/gray"
-                        android:textSize="16sp"
-                        />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -111,8 +105,7 @@
         <android.support.v7.widget.RecyclerView
             android:id="@+id/main_rv_show_diary"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
         </android.support.v7.widget.RecyclerView>
     </LinearLayout>

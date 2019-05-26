@@ -1,6 +1,5 @@
 package com.wmj.oneday;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -9,8 +8,6 @@ import android.graphics.Paint;
 import android.graphics.PathEffect;
 import android.util.AttributeSet;
 import android.widget.EditText;
-
-@SuppressLint({ "ResourceAsColor", "DrawAllocation" })
 
 public class LineEditText extends EditText{
     public LineEditText(Context context) {
